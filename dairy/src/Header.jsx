@@ -32,9 +32,10 @@ const Header = () => {
       dropdown: [
         { name: 'Software Development', href: '#web-dev' },
         { name: 'Project Outsourcing', href: '#mobile-apps' },
-        { name: 'HR Consultancy', href: '#cloud' },
+        { name: 'Recruiting', href: '#cloud' },
         { name: 'BPO Service', href: '#ai-ml' },
-        { name: 'Medical Billing', href: '#devops' }
+        { name: 'Medical Billing', href: '#devops' },
+        { name: 'Internship', href: '#internship' }
       ]
     },
     {
@@ -61,7 +62,7 @@ const Header = () => {
     <img src="https://kitsacitsolutions.com/img/akashay%20logo.jpg" alt="Logo" className="logo-image" />
   </div>
   <span className="logo-text">
-    Kitsac
+    KIT<span className='colorrr'>SAC</span>
     <span className="logo-subtitle">IT Solutions Pvt Ltd</span>
   </span>
 </Link>

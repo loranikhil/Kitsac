@@ -9,7 +9,8 @@ import {
   Wrench,
   MapPin,
   CheckCircle,
-  ArrowRight
+  ArrowRight,
+  ShieldCheck
 } from 'lucide-react';
 import './About.css';
 
@@ -27,8 +28,8 @@ const About = () => {
     },
     {
       icon: <Users className="service-icon" />,
-      title: "HR Consultancy",
-      description: "Strategic human resource consulting and management solutions"
+      title: "Recruiting",
+      description: "Recruiting and management solutions"
     },
     {
       icon: <HeadphonesIcon className="service-icon" />,
@@ -39,6 +40,11 @@ const About = () => {
       icon: <Building2 className="service-icon" />,
       title: "Medical Billing Service",
       description: "Managing the entire billing cycle."
+    },
+     {
+      icon: <ShieldCheck className="service-icon" />,
+      title: "Internship",
+      description: "Internship Completion Certificate provided"
     }
   ];
 
