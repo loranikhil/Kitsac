@@ -92,8 +92,6 @@
 .particle-19 { top: 75%; left: 5%; animation-delay: 4.2s; }
 .particle-20 { top: 85%; left: 95%; animation-delay: 5.2s; }
 
-
-
 /* Hero Container */
 .hero-container {
   position: relative;
@@ -122,24 +120,6 @@
 .hero-text.animate-in {
   opacity: 1;
   transform: translateY(0);
-}
-
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50px;
-  padding: 8px 16px;
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 2rem;
-  backdrop-filter: blur(10px);
-}
-
-.badge-icon {
-  font-size: 1rem;
 }
 
 .hero-titles {
@@ -258,8 +238,6 @@
 }
 
 .btn-icon {
-  width: 16px;
-  height: 16px;
   transition: transform 0.3s ease;
 }
 
@@ -267,282 +245,205 @@
   transform: translateX(4px);
 }
 
-.secondary-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: transparent;
-  color: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 16px 24px;
-  border-radius: 50px;
-  font-weight: 500;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-}
-
-.secondary-btn:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.3);
-  color: #fff;
-}
-
-.play-icon {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-  stroke: none;
-}
-
-/* Social Proof */
-.hero-social-proof {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.social-text {
-  font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.company-logos {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.company-logo {
-  font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.4);
-  font-weight: 500;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-
-.company-logo:hover {
-  opacity: 1;
-}
-
-/* Hero Visual */
-.hero-visual {
+/* Business Services Form */
+.business-form-container {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 }
 
-.hero-visual.animate-in {
+.business-form-container.animate-in {
   opacity: 1;
   transform: translateY(0);
 }
 
-.visual-container {
-  position: relative;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Floating Cards */
-.floating-card {
-  position: absolute;
+.business-form-card {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 1.5rem;
-  width: 200px;
+  border-radius: 20px;
+  padding: 2rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
-  margin-top: -140px;
 }
 
-.floating-card:hover {
+.business-form-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
 }
 
-.card-1 {
-  top: 90px;
-  left: -0px;
-  animation: cardFloat1 6s ease-in-out infinite;
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.card-2 {
-  top: 150px;
-  right: -30px;
-  animation: cardFloat2 6s ease-in-out infinite 2s;
+.form-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
 }
 
-.card-3 {
-  bottom: 90px;
-  left: 20px;
-  animation: cardFloat3 6s ease-in-out infinite 4s;
+.form-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
 }
 
-.card-header {
+.business-form {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Services Grid */
+.services-grids {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
   margin-bottom: 1rem;
 }
 
-.card-dots {
+.service-item {
   display: flex;
-  gap: 4px;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
 }
 
-.card-dots span {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3);
+.service-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
 }
 
-.card-dots span:nth-child(1) { background: #ff5f56; }
-.card-dots span:nth-child(2) { background: #ffbd2e; }
-.card-dots span:nth-child(3) { background: #27ca3f; }
+.service-item.selected {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+  border-color: #667eea;
+  color: #fff;
+}
 
-.card-title {
+.service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.service-name {
+  flex: 1;
+  line-height: 1.3;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
 }
 
-.card-content {
-  height: 80px;
-}
-
-/* Card 1 - Code Lines */
-.code-line {
-  height: 4px;
-  background: linear-gradient(90deg, #667eea, transparent);
-  border-radius: 2px;
-  margin-bottom: 8px;
-  animation: codeAnimation 2s ease-in-out infinite;
-}
-
-.code-line.short {
-  width: 60%;
-}
-
-/* Card 2 - App Mockup */
-.app-mockup {
-  height: 100%;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-  padding: 8px;
-}
-
-.app-header {
-  height: 12px;
-  background: linear-gradient(90deg, #667eea, #764ba2);
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
-
-.app-body {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.app-element {
-  height: 8px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
-}
-
-.app-element.small {
-  width: 70%;
-}
-
-/* Card 3 - Cloud Diagram */
-.cloud-diagram {
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.cloud-node {
-  width: 24px;
-  height: 24px;
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
-  border-radius: 50%;
-  position: relative;
-}
-
-.cloud-connection {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  right: 30%;
-  height: 2px;
-  background: linear-gradient(90deg, #4facfe, #00f2fe);
-  transform: translateY(-50%);
-}
-
-/* Central Element */
-.central-element {
-  position: relative;
-  z-index: 2;
-}
-
-.central-circle {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: centralRotate 20s linear infinite;
-  margin-top: -160px;
-}
-
-.circle-ring {
-  position: absolute;
-  border-radius: 50%;
-  border: 2px solid;
-  animation: ringPulse 3s ease-in-out infinite;
-}
-
-.ring-1 {
-  width: 100%;
-  height: 100%;
-  border-color: rgba(102, 126, 234, 0.3);
-  animation-delay: 0s;
-}
-
-.ring-2 {
-  width: 80%;
-  height: 80%;
-  border-color: rgba(240, 147, 251, 0.3);
-  animation-delay: 1.5s;
-}
-
-.circle-core {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #ffffff, #f1e8fa);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.7rem;
-  font-weight: 700;
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
   color: #fff;
-  z-index: 1;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.quote-submit-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+background: linear-gradient(135deg, #f85001 0%, #e6640d 100%);
+  color: #fff;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(255, 115, 0, 0.3);
+  margin-top: 0.5rem;
+}
+
+.quote-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 212, 255, 0.4);
+}
+
+.quote-submit-btn:hover .btn-icon {
+  transform: translateX(4px);
+}
+
+.form-note {
+  text-align: center;
+  font-size: 0.825rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 1rem;
+  line-height: 1.5;
 }
 
 /* Scroll Indicator */
 .scroll-indicator {
   position: absolute;
-  bottom: 2rem;
+  bottom: 0.001rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -576,45 +477,15 @@
 }
 
 @keyframes particleFloat {
-  0% { transform: translateY(0px) opacity(0); }
+  0% { transform: translateY(0px); opacity: 0; }
   10% { opacity: 1; }
   90% { opacity: 1; }
-  100% { transform: translateY(-100vh) opacity(0); }
+  100% { transform: translateY(-100vh); opacity: 0; }
 }
 
 @keyframes textSlideUp {
   0% { transform: translateY(20px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes cardFloat1 {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-15px) rotate(2deg); }
-}
-
-@keyframes cardFloat2 {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(-2deg); }
-}
-
-@keyframes cardFloat3 {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-12px) rotate(1deg); }
-}
-
-@keyframes codeAnimation {
-  0%, 100% { width: 100%; opacity: 0.6; }
-  50% { width: 80%; opacity: 1; }
-}
-
-@keyframes centralRotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-@keyframes ringPulse {
-  0%, 100% { opacity: 0.3; transform: scale(1); }
-  50% { opacity: 0.6; transform: scale(1.05); }
 }
 
 @keyframes scrollBounce {
@@ -632,20 +503,13 @@
     gap: 1.5rem;
   }
   
-  .floating-card {
-    width: 180px;
-    padding: 1.25rem;
+  .business-form-card {
+    padding: 1.5rem;
   }
   
-  .central-circle {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .circle-core {
-    width: 50px;
-    height: 50px;
-    font-size: 0.65rem;
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
   }
 }
 
@@ -670,44 +534,29 @@
   }
   
   .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
+    justify-content: center;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
   
-  .primary-btn,
-  .secondary-btn {
-    justify-content: center;
+  .business-form-card {
+    padding: 1.5rem;
   }
   
-  .company-logos {
-    justify-content: center;
-    gap: 1.5rem;
+  .form-header {
+    margin-bottom: 1.5rem;
   }
   
-  .visual-container {
-    height: 400px;
-    margin-top: 2rem;
+  .form-title {
+    font-size: 1.25rem;
   }
   
-  .floating-card {
-    width: 160px;
-    padding: 1rem;
-  }
-  
-  .card-1 {
-    top: 40px;
-    left: -20px;
-  }
-  
-  .card-2 {
-    top: 120px;
-    right: -10px;
-  }
-  
-  .card-3 {
-    bottom: 80px;
-    left: 40px;
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 }
 
@@ -716,7 +565,11 @@
     padding: 0 0.75rem;
   }
   
-  .hero-title {
+  .hero-titles {
+    font-size: 2.5rem;
+  }
+  
+  .title-highlight {
     font-size: 2.5rem;
   }
   
@@ -739,24 +592,38 @@
     height: 1px;
   }
   
-  .visual-container {
-    height: 300px;
+  .business-form-card {
+    padding: 1rem;
   }
   
-  .floating-card {
-    width: 140px;
-    padding: 0.5rem;
+  .form-title {
+    font-size: 1.1rem;
   }
   
-  .central-circle {
-    width: 80px;
-    height: 80px;
+  .form-subtitle {
+    font-size: 0.9rem;
   }
   
-  .circle-core {
-    width: 40px;
-    height: 40px;
-    font-size: 0.6rem;
+  .business-form {
+    gap: 1.5rem;
+  }
+  
+  .service-item {
+    padding: 10px 14px;
+    font-size: 0.8rem;
+    gap: 10px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+  }
+  
+  .quote-submit-btn {
+    padding: 14px 24px;
+    font-size: 0.95rem;
   }
   
   .orb-1,

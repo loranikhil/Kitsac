@@ -30,9 +30,9 @@ const Header = () => {
       name: 'Services',
       href: '#services',
       dropdown: [
-        { name: 'Software Development', href: '#web-dev' },
-        { name: 'Project Outsourcing', href: '#mobile-apps' },
-        { name: 'Recruiting', href: '#cloud' },
+        { name: 'Web Development', href: '#web-dev' },
+        { name: 'Tourism Application', href: '#mobile-apps' },
+        { name: 'Digital Marketing', href: '#cloud' },
         { name: 'BPO Service', href: '#ai-ml' },
         { name: 'Medical Billing', href: '#devops' },
         { name: 'Internship', href: '#internship' }
@@ -46,6 +46,15 @@ const Header = () => {
         { name: 'E-commerce', href: '#ecommerce' },
         { name: 'CRM Systems', href: '#crm' },
         { name: 'Custom Software', href: '#custom' }
+      ]
+    },
+     {
+      name: 'Our Products',
+      href: '#solutions',
+      dropdown: [
+        { name: 'Tourism Application', href: '#enterprise' },
+        { name: 'Gated Community Security Application', href: '#ecommerce' },
+       
       ]
     },
     { name: 'Career', href: '/career' }, 

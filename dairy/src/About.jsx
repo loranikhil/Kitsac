@@ -2,7 +2,8 @@ import React from 'react';
 import { 
   Code2, 
   Cloud, 
-  Shield, 
+  Shield,
+  LayoutGrid, 
   Users, 
   Building2, 
   HeadphonesIcon,
@@ -81,6 +82,14 @@ const About = () => {
                 specializing in software development, cloud solutions, cybersecurity, and 
                 IT consulting to drive digital transformation and empower businesses for 
                 future growth.
+              </p>
+              <div className="card-header">
+                <LayoutGrid className="header-icon" />
+                <h3>Our Products</h3>
+              </div>
+              <p>
+                Tourism Application<br></br>
+                Gated Community Security Application
               </p>
               <div className="registration-info">
                 <div className="reg-badge">
